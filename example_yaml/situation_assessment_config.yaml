@@ -1,0 +1,65 @@
+---
+situation_assessment:
+    starting_world_state_file: /home/theworld/ros_workspaces/indigo_ws/src/scenarios/demo_observer/world_state.xml
+    ring_buffer_length: 10
+    use_orientation: false
+    track_robot: true
+    track_agents: true
+    track_objects: true
+    track_groups: false
+    tf_bridge:
+        track_robot: true
+        track_agents: true
+        track_objects: true
+        track_groups: false
+    human_names:
+        - human1
+        # - human2
+    body_parts:
+        - head
+        - hand
+        - torso
+        # - human2 
+    object_names:
+        - waterbottle
+        - teabottle
+        - mug
+        - keys
+        # - remote
+        - book1
+        - book2
+        # - book3
+        - table
+        - shelf1
+        - shelf2
+        # - shelf3
+        # - sidetable
+        - sofa
+        # - livingroom
+        # - bathroom
+        - outside
+    locations:
+        # - livingroom
+        - outside
+        - table
+        - shelf1
+        - shelf2
+        # - shelf3
+        - sofa
+        # - sidetable
+        - this
+        # - bathroom
+    locations_depth:
+        livingroom: 1
+        outside: 1
+        bathroom: 1
+        table: 2
+        shelf1: 2
+        shelf2: 2
+        shelf3: 2
+        sofa: 2
+        sidetable: 2
+        this: 0
+    simulation: true
+    robot_name: PR2_ROBOT
+
